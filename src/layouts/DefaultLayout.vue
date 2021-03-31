@@ -28,7 +28,7 @@
 
     <a-layout-footer>
       <a-row type="flex">
-        <a-col :xs="{ span: 24 }" :lg="{ span: 12 }">
+        <a-col :xs="{ span: 24 }" :xl="{ span: 20 }" :xxl="{ span: 12 }">
           <h2 class="footer-title">
             저작권 고지사항
           </h2>
@@ -72,7 +72,7 @@
             권리침해 문의: <a href="https://github.com/dungsil/LOH-Tools/issues">문의하기</a>
           </p>
         </a-col>
-        <a-col class="footer-link" :xs="{ span: 24 }" :lg="{ offset: 8, span: 4 }">
+        <a-col class="footer-link" :xs="{ span: 24 }" :xl="{ offset: 1, span: 3}" :xxl="{ offset: 8, span: 4 }">
           <h2 class="footer-title">
             링크
           </h2>
