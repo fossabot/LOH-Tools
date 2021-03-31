@@ -12,7 +12,7 @@
         </p>
       </div>
     </div>
-    <a-layout-header>
+    <a-layout-header class="scroll-header">
       <a-menu mode="horizontal" theme="dark">
         <a-menu-item key="home">
           <a-icon type="home" />
@@ -49,7 +49,7 @@
           </p>
 
           <p class="footer-copyright">
-            기재되어있는 "클로버 게임즈", "로드 오브 히어로즈", "Clover Games", "Load of Heros"등은
+            기재되어있는 "클로버게임즈", "로드 오브 히어로즈", "Clover Games", "Load of Heros"등은
 
             <a href="https://www.clovergames.com/" target="_blank">
               클로버게임즈㈜
@@ -107,6 +107,34 @@ export default Vue.extend({
         }
       ]
     }
+  },
+  created () {
+    if (process.browser) {
+      window.addEventListener('scroll', this.triggerStickyHeader)
+    }
+  },
+  destroyed () {
+    if (process.browser) {
+      window.addEventListener('scroll', this.triggerStickyHeader)
+    }
+  },
+  methods: {
+    triggerStickyHeader () {
+      if (process.browser) {
+        const $cover = document.querySelector('.cover-image') as HTMLElement
+        const $header = document.querySelector('.scroll-header') as HTMLElement
+
+        const fixedHeaderStartPoint = $cover.offsetHeight
+        const currentPoint = window.pageYOffset
+
+        console.log(`header: ${fixedHeaderStartPoint} / current: ${currentPoint}`)
+        if (currentPoint > fixedHeaderStartPoint) {
+          $header.classList.add('js-sticky')
+        } else {
+          $header.classList.remove('js-sticky')
+        }
+      }
+    }
   }
 })
 </script>
@@ -117,6 +145,11 @@ export default Vue.extend({
 
   .landing {
     position: relative;
+  }
+
+  .scroll-header {
+    display: block;
+    width: 100%;
   }
 
   .cover-image {
@@ -164,5 +197,11 @@ export default Vue.extend({
       color: inherit;
     }
   }
+}
+
+.js-sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 </style>
