@@ -2,13 +2,20 @@
   <a-layout class="default-layout">
     <!-- 랜딩 이미지 -->
     <div class="landing">
-      <nuxt-picture class="cover-image" src="https://dummyimage.com/1902x360/000/fff.png" width="100%" alt="" />
+      <nuxt-picture class="cover-image" src="/images/loh/landing.png" width="100%" alt="" />
       <div class="description-wrapper">
         <h2 class="description-header">
-          Description header
+          LOH Tools
         </h2>
         <p class="description-content">
-          Description content
+          모바일게임 '로드 오브 히어로즈'를 위한 여러 유틸리티 모음
+        </p>
+
+        <p class="description-subcontent">
+          Inspired by
+
+          <a href="https://ffxivtools.me" target="_blank">ffxivtools.me</a>,
+          <a href="https://www.games2gether.com/" target="_blank">Games2Gether</a>
         </p>
       </div>
     </div>
@@ -127,7 +134,6 @@ export default Vue.extend({
         const fixedHeaderStartPoint = $cover.offsetHeight
         const currentPoint = window.pageYOffset
 
-        console.log(`header: ${fixedHeaderStartPoint} / current: ${currentPoint}`)
         if (currentPoint > fixedHeaderStartPoint) {
           $header.classList.add('js-sticky')
         } else {
@@ -170,7 +176,7 @@ export default Vue.extend({
       left: 0;
       right: 0;
 
-      background-color: rgba(0, 0, 0, .5);
+      background-color: rgba(0, 0, 0, .65);
       color: #fff;
     }
 
