@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Layout, Row, Col, Icon, Space, Menu } from 'ant-design-vue'
+import { Layout, Row, Col, Icon, Space, Menu, Card } from 'ant-design-vue'
 
 Vue.use(Row)
 Vue.use(Col)
@@ -13,3 +13,5 @@ Vue.component(Layout.Footer.name, Layout.Footer)
 
 Vue.component(Menu.name, Menu)
 Vue.component(Menu.Item.name, Menu.Item)
+
+Vue.use(Card)

@@ -29,7 +29,7 @@
     </a-layout-header>
 
     <!-- 컨텐츠 -->
-    <a-layout-content>
+    <a-layout-content class="contents">
       <nuxt />
     </a-layout-content>
 
@@ -103,6 +103,7 @@ export default Vue.extend({
   name: 'DefaultLayout',
   head (): MetaInfo {
     return {
+      titleTemplate: chunk => chunk ? `${chunk} · LOH Tools` : 'LOH Tools',
       link: [
         {
           rel: 'preconnect',
@@ -209,5 +210,11 @@ export default Vue.extend({
   position: fixed;
   width: 100%;
   top: 0;
+
+  z-index: 9999;
+}
+
+.contents {
+  padding: 50px;
 }
 </style>
