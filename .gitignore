@@ -7,7 +7,7 @@ package-lock.json
 
 # Nuxt.js
 .nuxt/
-build/
+dist/
 
 # Jetbrains IDE
 .idea/

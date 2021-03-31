@@ -2,6 +2,8 @@ import type { NuxtConfig } from '@nuxt/types'
 
 const nuxtConfig: NuxtConfig = {
   srcDir: 'src',
+  target: 'static',
+  modern: 'client',
   build: {
     loaders: {
       less: {
