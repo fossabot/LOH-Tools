@@ -8,6 +8,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "lint:eslint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "lintfix:eslint": "yarn lint:eslint --fix",
     "lint": "run-p lint:*",
