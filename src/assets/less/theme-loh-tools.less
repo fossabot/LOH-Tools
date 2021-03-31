@@ -1,0 +1,17 @@
+
+// Common
+@body-background: #f8f9fa;
+
+// Layout
+@layout-body-background: @body-background;
+@layout-header-background: #fff;
+
+// Menu
+@menu-dark-color: #000;
+@menu-dark-item-hover-bg: @primary-5;
+
+.@{layout-prefix-cls}-header {
+  .@{menu-prefix-cls}-horizontal {
+    line-height: @layout-header-height; // 메뉴를 header 크기와 동일하게 설정
+  }
+}
