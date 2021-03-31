@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@dungsil",
+    "@dungsil/eslint-config-vue"
+  ]
+}
