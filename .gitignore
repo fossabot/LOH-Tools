@@ -1,0 +1,10 @@
+# Log
+*.log
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Jetbrains IDE
+.idea/
+*.iml
