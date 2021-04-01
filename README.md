@@ -1,4 +1,6 @@
 # LOH-Tools
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdungsil%2FLOH-Tools.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdungsil%2FLOH-Tools?ref=badge_shield)
+
 모바일게임 '로드 오브 히어로즈' 웹 도구 모음
 
 ## 라이선스
@@ -14,3 +16,7 @@
 <!-- 변수 -->
 [LINK_CLOVER_GAMES]: https://www.clovergames.com/
 [LINK_TERM_OF_SERVICE]: https://cdn.clovergames.io/page/ko/tos.html
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdungsil%2FLOH-Tools.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdungsil%2FLOH-Tools?ref=badge_large)
