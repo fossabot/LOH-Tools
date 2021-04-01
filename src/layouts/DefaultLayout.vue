@@ -56,7 +56,7 @@
           </p>
 
           <p class="footer-copyright">
-            기재되어있는 "클로버게임즈", "로드 오브 히어로즈", "Clover Games", "Load of Heros"등은
+            기재되어있는 "클로버게임즈", "로드 오브 히어로즈", "Clover Games", "Lord of Heros"등은
 
             <a href="https://www.clovergames.com/" target="_blank">
               클로버게임즈㈜
